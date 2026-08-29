@@ -40,7 +40,7 @@ hl.monitor({
 })
 
 -- Workspace-to-Monitor Mappings
--- Left Display (Unknown-2): Workspaces 1-3
+-- Left Display (Unknown-2): Workspaces 1, 4, 7,
 for _, ws in ipairs({1,4,7}) do
   hl.workspace_rule({
     workspace = tostring(ws),
@@ -49,7 +49,7 @@ for _, ws in ipairs({1,4,7}) do
   })
 end
 
--- Center Display (HDMI-A-1): Workspaces 4-6
+-- Center Display (HDMI-A-1): Workspaces 2, 5, 8,
 for _, ws in ipairs({2,5,8}) do
   hl.workspace_rule({
     workspace = tostring(ws),
@@ -58,7 +58,7 @@ for _, ws in ipairs({2,5,8}) do
   })
 end
 
--- Right Display (DP-1 Portrait): Workspaces 7-10
+-- Right Display (DP-1 Portrait): Workspaces 3, 6, 8, 10
 for _,ws in ipairs({3,6,9,10}) do
   hl.workspace_rule({
     workspace = tostring(ws),
